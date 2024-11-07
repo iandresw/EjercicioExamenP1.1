@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Ejercicio Examen 1.1</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h3>Calculador de descuento de productos</h3>
+        <form id="descuentoForm">
+            <div id="productos" class="form-group">
+                <label for="producto1">Producto 1:</label>
+                <input type="number" id="producto1" class="form-control" placeholder="Valor del producto 1">
+                <label for="producto2">Producto 2:</label>
+                <input type="number" id="producto2" class="form-control" placeholder="Valor del producto 2">
+                <label for="producto3">Producto 3:</label>
+                <input type="number" id="producto3" class="form-control" placeholder="Valor del producto 3">
+                <label for="producto4">Producto 4:</label>
+                <input type="number" id="producto4" class="form-control" placeholder="Valor del producto 4">
+                <label for="producto5">Producto 5:</label>
+                <input type="number" id="producto5" class="form-control" placeholder="Valor del producto 5">
+            </div>
+            <div class="form-group">
+                <label for="subtotal">Subtotal:</label>
+                <input type="text" id="subtotal" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label id="descuentolb" for="descuentolb">Descuento (0%):</label>
+                <input type="text" id="descuento" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label for="total">Total a pagar:</label>
+                <input type="text" id="total" class="form-control" readonly>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+            <button type="button" class="btn btn-secondary" onclick="limpiar()">Limpiar</button>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
